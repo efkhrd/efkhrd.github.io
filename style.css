@@ -4,13 +4,106 @@ body {
 
 .jumbotron {
   padding-top: 6rem;
-  background-color: #5f181f;
+  background-color: #5c2b30;
 }
 
 #projects {
-  background-color: #5f181f;
+  background-color: #5c2b30;
 }
 
 section {
   padding-top: 5rem;
+}
+
+/* Project Galerry Section */
+.project-gallery {
+  position: relative;
+  background-color: #9b303b;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+.project-gallery::before {
+  content: "My";
+  position: absolute;
+  color: #fff;
+  font-size: 4.5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-gallery:hover::before {
+  opacity: 0.2;
+}
+
+.project-gallery::after {
+  content: "Project";
+  position: absolute;
+  color: #fff;
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 320px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-gallery:hover::after {
+  opacity: 0.2;
+}
+
+.project {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.project-gallery:hover .project {
+  top: 30px;
+  opacity: 1;
+}
+
+/* project button dan image */
+
+.project-1-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0%, 50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-gallery:hover .project-1-btn {
+  bottom: 10px;
+  opacity: 1;
+}
+
+.project-img {
+  position: absolute;
+  top: 37%;
+
+  left: 25%;
+  transform: translate3d(3%, -3%, 50px);
+  max-width: 180px;
+  transition: 0.5s;
+}
+
+.project-gallery:hover .project-img {
+  transform: translate3d(3%, -3%, 50px) scale(1.2) rotate(-7deg);
 }

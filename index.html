@@ -98,14 +98,14 @@
     <!-- Project -->
     <section id="projects">
       <div class="container">
-        <div class="row text-center mb-3">
+        <!-- <div class="row text-center mb-3">
           <div class="col text-white fw-bold">
             <h2>My Projects</h2>
           </div>
-        </div>
+        </div> -->
 
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
+          <!-- <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500">
               <img src="img/projects/1.jpg" class="card-img-top" alt="project 1" />
               <div class="card-body">
@@ -152,7 +152,7 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -170,9 +170,8 @@
               <div class="project-gallery">
                 <h4 class="project">Warehousing Robot</h4>
                 <img src="img/projects/project-1/img-00.PNG" alt="warehousing robot" class="project-img" />
-                <a class="btn project-1-btn text-danger" href="#accordion1" style="background-color: #fff" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
-                  >Show Details</a
-                >
+
+                <a class="btn project-btn fw-bold" href="#detail-project" style="background-color: #fff; color: #5c2b30" role="button" aria-expanded="false" aria-controls="collapseOne">Show Details</a>
               </div>
             </div>
 
@@ -180,9 +179,7 @@
               <div class="project-gallery">
                 <h4 class="project">Accelerator Hardware</h4>
                 <img src="img/projects/project-1/img-01.png" alt="Accelerator Hardware" class="project-img" />
-                <a class="btn project-1-btn text-danger" href="#accordion2" style="background-color: #fff" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne"
-                  >Show Details</a
-                >
+                <a class="btn project-btn fw-bold" href="#detail-project" style="background-color: #fff; color: #5c2b30" role="button" aria-expanded="false" aria-controls="collapseTwo">Show Details</a>
               </div>
             </div>
 
@@ -190,7 +187,15 @@
               <div class="project-gallery">
                 <h4 class="project">ReRAM for Embedded Application</h4>
                 <img src="img/projects/project-1/img-02.png" alt="ReRam for Embedded Application" class="project-img" />
-                <a class="btn project-1-btn text-danger" href="#accordion3" style="background-color: #fff" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne"
+                <a
+                  class="btn project-btn fw-bold"
+                  href="#detail-project"
+                  style="background-color: #fff; color: #5c2b30"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
                   >Show Details</a
                 >
               </div>
@@ -200,6 +205,125 @@
       </section>
 
       <!-- Akhir Tampilan template -->
+      <!-- Project Detail -->
+      <section id="project-detail">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <h2 class="fw-bold text-white" id="detail-project">Detail Projects</h2>
+            <div class="accordion" id="accordion1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <div class="d-grid gap-2">
+                    <button class="btn fw-bold text-white" type="button" style="background-color: #9b303b" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Project-1 | Warehousing Robot
+                    </button>
+                  </div>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                  <div id="accordionOne" class="accordion-body" style="text-align: justify">
+                    <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
+                    <p>
+                      In 2017, I was looking for a research topic for my final project, until one condition I started research with ideas that came from two large multinational companies, namely: Amazon and Alibaba. The news headline that I
+                      read at that time was about a warehousing robot that sends goods from a point starting with preparation for shipment and being delivered to the point of destination.
+                    </p>
+                    <p>
+                      As an electrical engineering student in the control system field, I tried to try to realize this idea with the help of my supervisor. I, who at that time liked the MOBA game DotA 2, thought of a situation where a
+                      character could move independently by selecting the fastest route and being able to identify obstacles or routes that could not be passed. So, the combination of ideas comes how a robot can determine the shortest route
+                      from all possible routes that can be passed and can avoid obstacles. To be able to determine the shortest route, we need an algorithm that can be mathematically implemented to the conditions on the robot so that it can
+                      solve problems in finding the shortest route.
+                    </p>
+                    <p>
+                      At that time, an algorithm named A* (A Star) was chosen based on a simple method that can fulfill a mathematical function and can be implemented in a robot to find the shortest route independently. In a route search
+                      process, there is an important variable, namely position. The position is a reference parameter for the robot to move precisely with the specified conditions so that it can find out how the robot can move with the
+                      shortest route. In identifying the position to be used by the robot, the supervisor suggests using visible light communication (VLC) technology.
+                    </p>
+                    <p>
+                      VLC is a communication system technology that uses visible light as a form of information signal. Of course, VLC can be implemented in my final project research by utilizing LED lights which function as lighting
+                      devices in rooms such as in warehousing, obviously as the main function as lighting can also be used as identification of a position.
+                    </p>
+                    <p>
+                      To be able to move at a certain speed, the design of a wheeled robot is realized to be able to test the robot's ability to move and choose the shortest route based on the position of the lights, each of which has an
+                      identity with a certain scheme. During the testing process, a 2x2 and 3x3 lamp mapping scheme was used referring to the grid-world mapping. In the process of mapping and placing the specified position, testing is
+                      carried out on the robot to move from the position of the starting point to the specified destination point. The test results show that the design of a robot in which the A* algorithm is implemented with a position
+                      mapping using a lamp that has been implemented by VLC can move to find the shortest route out of all possible routes that can be passed based on the specified destination point.
+                    </p>
+                    <p>
+                      <a> Programming : C++ </a> <br />
+                      <a> Tools : Arduino IDE, Altium, Lt Spice </a> <br />
+                      <a>Devices : 4 Motor DC, Chasis, Arduino Mega, Photodiode Sensor TSL-252, Driver Motor L298N, 2 Battery 3000 Mah, 9 LEDs with Arduino Nano, LED Driver IRFZ44N in every LED</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordion2">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <div class="d-grid gap-2">
+                    <button class="btn fw-bold text-white" type="button" style="background-color: #9b303b" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Project-2 | Accelerator Hardware
+                    </button>
+                  </div>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                  <div id="accordionTwo" class="accordion-body" style="text-align: justify">
+                    <strong>PATH PLANNING MODELING AND ARCHITECTURE DESIGN FOR Q-LEARNING ALGORITHM USING FPGA.</strong>
+                    <p>
+                      In 2017, I was looking for a research topic for my final project, until one condition I started research with ideas that came from two large multinational companies, namely: Amazon and Alibaba. The news headline that I
+                      read at that time was about a warehousing robot that sends goods from a point starting with preparation for shipment and being delivered to the point of destination.
+                    </p>
+                    <p>
+                      As an electrical engineering student in the control system field, I tried to try to realize this idea with the help of my supervisor. I, who at that time liked the MOBA game DotA 2, thought of a situation where a
+                      character could move independently by selecting the fastest route and being able to identify obstacles or routes that could not be passed. So, the combination of ideas comes how a robot can determine the shortest route
+                      from all possible routes that can be passed and can avoid obstacles. To be able to determine the shortest route, we need an algorithm that can be mathematically implemented to the conditions on the robot so that it can
+                      solve problems in finding the shortest route.
+                    </p>
+                    <p>
+                      At that time, an algorithm named A* (A Star) was chosen based on a simple method that can fulfill a mathematical function and can be implemented in a robot to find the shortest route independently. In a route search
+                      process, there is an important variable, namely position. The position is a reference parameter for the robot to move precisely with the specified conditions so that it can find out how the robot can move with the
+                      shortest route. In identifying the position to be used by the robot, the supervisor suggests using visible light communication (VLC) technology.
+                    </p>
+                    <p>
+                      VLC is a communication system technology that uses visible light as a form of information signal. Of course, VLC can be implemented in my final project research by utilizing LED lights which function as lighting
+                      devices in rooms such as in warehousing, obviously as the main function as lighting can also be used as identification of a position.
+                    </p>
+                    <p>
+                      To be able to move at a certain speed, the design of a wheeled robot is realized to be able to test the robot's ability to move and choose the shortest route based on the position of the lights, each of which has an
+                      identity with a certain scheme. During the testing process, a 2x2 and 3x3 lamp mapping scheme was used referring to the grid-world mapping. In the process of mapping and placing the specified position, testing is
+                      carried out on the robot to move from the position of the starting point to the specified destination point. The test results show that the design of a robot in which the A* algorithm is implemented with a position
+                      mapping using a lamp that has been implemented by VLC can move to find the shortest route out of all possible routes that can be passed based on the specified destination point.
+                    </p>
+                    <p>
+                      <a> Programming : C++ </a> <br />
+                      <a> Tools : Arduino IDE, Altium, Lt Spice </a> <br />
+                      <a>Devices : 4 Motor DC, Chasis, Arduino Mega, Photodiode Sensor TSL-252, Driver Motor L298N, 2 Battery 3000 Mah, 9 LEDs with Arduino Nano, and LED Driver IRFZ44N in every LED</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordion3">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-primary fw-bold text-white" type="button" style="background-color: #9b303b">Project-3 | ReRam for Embedded Application</a>
+                  </div>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                  <div id="accordionThree" class="accordion-body">
+                    <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
+                    It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                    can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Akhir Project Detail -->
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -210,65 +334,6 @@
       </svg>
     </section>
     <!-- Akhir Porject -->
-
-    <!-- Project Detail -->
-    <section id="project-detail">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <h2 class="fw-bold">Detail Projects</h2>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <div class="d-grid gap-2">
-                  <a class="btn btn-primary fw-bold text-white" type="button" style="background-color: #5f181f">Project-1 | Warehousing Robot</a>
-                </div>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion1">
-                <div id="accordionOne" class="accordion-body">
-                  <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
-                  It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                  modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion" id="accordion2">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <div class="d-grid gap-2">
-                  <a class="btn btn-primary fw-bold text-white" type="button" style="background-color: #5f181f">Project-2 | Accelerator Hardware</a>
-                </div>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion2">
-                <div id="accordionTwo" class="accordion-body">
-                  <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
-                  It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                  modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion" id="accordion3">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <div class="d-grid gap-2">
-                  <a class="btn btn-primary fw-bold text-white" type="button" style="background-color: #5f181f">Project-3 | ReRam for Embedded Application</a>
-                </div>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion3">
-                <div id="accordionThree" class="accordion-body">
-                  <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
-                  It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                  modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Akhir Project Detail -->
 
     <!--  Gallery -->
     <!-- <section id="galerry">

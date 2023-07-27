@@ -80,7 +80,7 @@ section {
 
 /* project button dan image */
 
-.project-1-btn {
+.project-btn {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -89,7 +89,7 @@ section {
   transition: 0.5s;
 }
 
-.project-gallery:hover .project-1-btn {
+.project-gallery:hover .project-btn {
   bottom: 10px;
   opacity: 1;
 }
@@ -106,4 +106,12 @@ section {
 
 .project-gallery:hover .project-img {
   transform: translate3d(3%, -3%, 50px) scale(1.2) rotate(-7deg);
+}
+
+/* show description */
+
+#collapse1 {
+  position: absolute;
+  text-align: justify;
+  top: 100%;
 }

@@ -187,17 +187,7 @@
               <div class="project-gallery">
                 <h4 class="project">ReRAM for Embedded Application</h4>
                 <img src="img/projects/project-1/img-02.png" alt="ReRam for Embedded Application" class="project-img" />
-                <a
-                  class="btn project-btn fw-bold"
-                  href="#detail-project"
-                  style="background-color: #fff; color: #5c2b30"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                  >Show Details</a
-                >
+                <a class="btn project-btn fw-bold" href="#detail-project" style="background-color: #fff; color: #5c2b30" role="button" aria-expanded="false" aria-controls="collapseThree">Show Details</a>
               </div>
             </div>
           </div>
@@ -210,6 +200,7 @@
         <div class="container">
           <div class="row text-center mb-3">
             <h2 class="fw-bold text-white" id="detail-project">Detail Projects</h2>
+
             <div class="accordion" id="accordion1">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -306,7 +297,8 @@
                     <p>
                       <a> Language Programming: Matrix language, Verilog, C</a> <br />
                       <a> Tools Programming: MATLAB, Vivado, Xilinx SDK</a> <br />
-                      <a>Devices: Laptop Lenovo Idea Pad with Ryzen 5 3500 ~2.1GHz (8CPU) and VGA Mobile Gfx, PC with VGA Radeon 5600xt and Ryzen 5 3600 6-Processor ~3.6GHZ (12CPU), and FPGA Board Zybo-7 Dual-Core Arm 40MHz</a>
+                      <a>Devices: Laptop Lenovo Idea Pad with Ryzen 5 3500 ~2.1GHz (8CPU) and VGA Mobile Gfx, PC with VGA Radeon 5600xt and Ryzen 5 3600 6-Processor ~3.6GHZ (12CPU), and FPGA Board Zybo-7 Dual-Core Arm 40MHz</a> <br/>
+                      <a> Publication: <a href="https://ieeexplore.ieee.org/document/9980743" > ieee/Algorithm and RTL Architecture Design of Q-Learning Algorithm for Path Planning </a>  </a>
                     </p>
                   </div>
                 </div>
@@ -316,14 +308,40 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <div class="d-grid gap-2">
-                    <a class="btn btn-primary fw-bold text-white" type="button" style="background-color: #9b303b">Project-3 | ReRam for Embedded Application</a>
+                    <button class="btn fw-bold text-white" type="button" style="background-color: #9b303b" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Project-3 | ReRam for Embedded Application
+                    </button>
                   </div>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion3" style="text-align: justify">
                   <div id="accordionThree" class="accordion-body">
-                    <strong>RERAM FOR EMBEDDED APPLICATION : A REVIEW.</strong>
-                    It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                    can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <p class="text-center"><strong>RERAM FOR EMBEDDED APPLICATION : A REVIEW.</strong></p>
+                    <p>
+                      ReRAM consists of an array of several resistive elements (RE) configured within a transistor cell (1T1R). RE has a stacked film structure supporting stable resistive switching in a Conductive Filament with Oxygen
+                      Vacancy formed. Oxygen Vacancy is created by firing a powerful ion+. The firing of ion + in a few minutes can remove some of the oxygen atoms. With a high coordination number of Cation than the Anion in the RE lattice,
+                      the firing of ion+ in a few minutes can remove some of the oxygen atoms closest to the center of the cell.
+                    </p>
+
+                    <p>
+                      Most ReRAM solutions have been evaluated to be integrated or embedded in CMOS technology nodes with the same silicon substrate. This implementation eliminates the need for external memory components, thereby increasing
+                      data retention, also reducing latency and power consumption. The challenge in embedded ReRAM fabrication is integrating RE fabrication into a sophisticated low-k BEOL process. The size and shape of the RE are designed
+                      to allow the filling of low-k gaps with limited cell area. Optimal RE etching method is needed to minimize etching damage on the RE side, excessive etching of the lower intermetallic dielectric (IMD), and corrosion of
+                      the metal layer under the RE.
+                    </p>
+
+                    <p>
+                      Benchmark Characteristics from ReRAM, There are Low Power, High Performance, and Low Cost. In sleep rate, ReRAM is the best data buffer that doesn't consume any power at all but with the use of ReRAM as a data buffer
+                      in an active state, ReRAM is still inferior to other devices that can provide faster and more stable performance. ReRAM for embedded plays a role in the development of OTP memory into RW-OTP memory to compete with MTP
+                      in terms of function by maintaining good retention and endurance. The use of polyamide on electrodes when forming TFT makes the devices low-cost.
+                    </p>
+
+                    <p>
+                      Most ReRAM solutions have been evaluated to be integrated or embedded in CMOS technology nodes with the same silicon substrate. This implementation eliminates the need for external memory components, thereby increasing
+                      data retention, reducing latency and power consumption, and potential external memory bus security vulnerabilities while maintaining fast data reads and writes.
+                    </p>
+
+                     Publication: <a href="https://ieeexplore.ieee.org/document/9501591" > ieee/ReRam Embedded for Application : A Review </a> 
+                    </p>
                   </div>
                 </div>
               </div>

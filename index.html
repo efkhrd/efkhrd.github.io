@@ -74,12 +74,12 @@
 
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-            <p>
+            <p style="text-align: justify">
               Muhammad Fakhrudin ( Fakhru ) is an Embedded System and Software Engineering enthusiast with years of experience since he studies an electrical engineering in 2012 at Telkom University. He starts his journey as a robot
               enthusiast at his mini project using C++ Programming Language. He keeps learning about Programming and Electronics when doing group projects and the final project at Telkom University in his bachelor’s degree program.
             </p>
           </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="1000">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="1000" style="text-align: justify">
             In 2020, He start master’s degree in Microelectronics Engineering at Bandung Institute of Technology (ITB). His Thesis about Artificial Intelligence algorithm that applied in path-planning system then design accelerator hardware
             using Field-Programmable Gate Array. He graduated from ITB in 2023 and focused on pursuing his personal goal which is became a microelectronics engineer and explore as a software engineer.
           </div>
@@ -222,7 +222,10 @@
 
                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion1">
                   <div id="accordionOne" class="accordion-body" style="text-align: justify">
-                    <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
+                    <p class="text-center">
+                      <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
+                    </p>
+
                     <p>
                       In 2017, I was looking for a research topic for my final project, until one condition I started research with ideas that came from two large multinational companies, namely: Amazon and Alibaba. The news headline that I
                       read at that time was about a warehousing robot that sends goods from a point starting with preparation for shipment and being delivered to the point of destination.
@@ -268,36 +271,42 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion2">
                   <div id="accordionTwo" class="accordion-body" style="text-align: justify">
-                    <strong>PATH PLANNING MODELING AND ARCHITECTURE DESIGN FOR Q-LEARNING ALGORITHM USING FPGA.</strong>
-                    <p>
-                      In 2017, I was looking for a research topic for my final project, until one condition I started research with ideas that came from two large multinational companies, namely: Amazon and Alibaba. The news headline that I
-                      read at that time was about a warehousing robot that sends goods from a point starting with preparation for shipment and being delivered to the point of destination.
+                    <p class="text-center">
+                      <strong>PATH PLANNING MODELING AND ARCHITECTURE DESIGN FOR Q-LEARNING ALGORITHM USING FPGA.</strong>
                     </p>
                     <p>
-                      As an electrical engineering student in the control system field, I tried to try to realize this idea with the help of my supervisor. I, who at that time liked the MOBA game DotA 2, thought of a situation where a
-                      character could move independently by selecting the fastest route and being able to identify obstacles or routes that could not be passed. So, the combination of ideas comes how a robot can determine the shortest route
-                      from all possible routes that can be passed and can avoid obstacles. To be able to determine the shortest route, we need an algorithm that can be mathematically implemented to the conditions on the robot so that it can
-                      solve problems in finding the shortest route.
+                      In 2020 I started my master's degree in microelectronics engineering, and for that, I needed a topic for my thesis. After I asked several lecturers about the availability of the topic, and at that time one of the
+                      prospective supervisors offered the topic of FPGA-based edge computing with several types of problems, including path-planning processes, tic-tac-toe games, and electronic amplifier circuits. At that time, I without
+                      hesitation chose the path-planning process as the topic of my thesis. The idea for this topic is, how fast is the computational process in determining the route needed as a solution to a problem.
                     </p>
                     <p>
-                      At that time, an algorithm named A* (A Star) was chosen based on a simple method that can fulfill a mathematical function and can be implemented in a robot to find the shortest route independently. In a route search
-                      process, there is an important variable, namely position. The position is a reference parameter for the robot to move precisely with the specified conditions so that it can find out how the robot can move with the
-                      shortest route. In identifying the position to be used by the robot, the supervisor suggests using visible light communication (VLC) technology.
+                      The idea of the problem came from this need and came from the speed in rescuing victims of natural disasters, such as in the case of victims of natural disasters who were trapped in a cave with different environmental
+                      conditions. The speed of the search process becomes very crucial during this crisis. The design of a hardware accelerator is defined as a solution and research objective to accelerate the computational process of
+                      finding the shortest route.
                     </p>
                     <p>
-                      VLC is a communication system technology that uses visible light as a form of information signal. Of course, VLC can be implemented in my final project research by utilizing LED lights which function as lighting
-                      devices in rooms such as in warehousing, obviously as the main function as lighting can also be used as identification of a position.
+                      Before designing a hardware accelerator for the process of finding the shortest route, several steps are needed such as determining the algorithm in determining the shortest route. After conducting several literature
+                      studies, the Q-learning algorithm from Reinforcement Learning was determined as a mathematical algorithm for systematically determining the shortest route.
                     </p>
                     <p>
-                      To be able to move at a certain speed, the design of a wheeled robot is realized to be able to test the robot's ability to move and choose the shortest route based on the position of the lights, each of which has an
-                      identity with a certain scheme. During the testing process, a 2x2 and 3x3 lamp mapping scheme was used referring to the grid-world mapping. In the process of mapping and placing the specified position, testing is
-                      carried out on the robot to move from the position of the starting point to the specified destination point. The test results show that the design of a robot in which the A* algorithm is implemented with a position
-                      mapping using a lamp that has been implemented by VLC can move to find the shortest route out of all possible routes that can be passed based on the specified destination point.
+                      Next, a model design is carried out to implement the q-learning algorithm in solving the shortest route search problem. Model design is done with MATLAB and applies several provisions such as the mapping scheme used,
+                      the number of episodes and maximum steps per episode as a learning process, learning rate parameters and discount factors, determining exploration and exploitation methods, reward design, as well as the initial
+                      position, destination position, position and the number of obstacles.
                     </p>
                     <p>
-                      <a> Programming : C++ </a> <br />
-                      <a> Tools : Arduino IDE, Altium, Lt Spice </a> <br />
-                      <a>Devices : 4 Motor DC, Chasis, Arduino Mega, Photodiode Sensor TSL-252, Driver Motor L298N, 2 Battery 3000 Mah, 9 LEDs with Arduino Nano, and LED Driver IRFZ44N in every LED</a>
+                      After all, parameters are set, modeling can be simulated to get the results of the agent's learning process in determining the shortest route. After doing the modeling, the results of the modeling program are converted
+                      into RTL architectural designs by reducing the complexity of the q-learning equation to get more optimal results in calculating accumulated rewards. The RTL architectural design was written using the Verilog
+                      programming language on the Vivado application using the Zybo-7 FPGA board. The next process is design verification with the synthesis process and design implementation to get the bitstream. After getting the
+                      bitstream, the next process is implementing the FPGA to test the design results on the Xilink SDK using the FPGA board.
+                    </p>
+                    <p>
+                      From the results of the modeling and implementation of the hardware, then an evaluation of the system design results is carried out and compares the model simulation time and the implementation of the design
+                      architecture on the hardware. It was found that the computing speed on the hardware was 763 times faster than the model with the results of determining the optimal shortest route in the same case.
+                    </p>
+                    <p>
+                      <a> Language Program: Matrix language, Verilog, C</a> <br />
+                      <a> Tools Programming: MATLAB, Vivado, Xilinx SDK</a> <br />
+                      <a>Devices: Laptop Lenovo Idea Pad with Ryzen 5 3500 ~2.1GHz (8CPU) and VGA Mobile Gfx, PC with VGA Radeon 5600xt and Ryzen 5 3600 6-Processor ~3.6GHZ (12CPU), and FPGA Board Zybo-7 Dual-Core Arm 40MHz</a>
                     </p>
                   </div>
                 </div>
@@ -312,7 +321,7 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion3">
                   <div id="accordionThree" class="accordion-body">
-                    <strong>A* ALGORITHM IMPLEMENTATION ON ROBOT MOVEMENT SYSTEM IN THE WAREHOUSE.</strong>
+                    <strong>RERAM FOR EMBEDDED APPLICATION : A REVIEW.</strong>
                     It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You
                     can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                   </div>
